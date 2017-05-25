@@ -19,7 +19,6 @@ function resetFields() {
 ////////////////////   USER INTERFACE   ////////////////////
 ////////////////////////////////////////////////////////////
 
-
 $(document).ready(function() {
   $(".form1").submit(function(event) { debugger;
     event.preventDefault();
@@ -36,8 +35,6 @@ $(document).ready(function() {
         return b.score - a.score;
     });
 
-    console.log(sortedMovieList);
-    console.log(sortedMovieList[0]);
     $("#results").empty();
 
     for (i = 0; i < sortedMovieList.length; i++) {
@@ -48,7 +45,8 @@ $(document).ready(function() {
         '</tr>'
       );
     }
-
     resetFields();
+    $('.initially-hidden').show();
   });
+
 });

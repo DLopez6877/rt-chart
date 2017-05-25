@@ -11,9 +11,24 @@
   <body>
     <div class="container">
       <header>
-        <h1>Rotten Tomatoes Top 10 Movie Sorter</h1>
+        <h1>Useless R<span class="o"><img src="img/head.png"/></span>tten T<span class="o"><img src="img/head.png"/></span>mat<span class="o"><img src="img/head.png"/></span>es M<span class="o"><img src="img/head.png"/></span>vie S<span class="o"><img src="img/head.png"/></span>rter</h1>
       </header>
+      <div class="skeleton-col">
+        <div class="skeletons-left">
+          <img src="img/gradient-skeleton-cheetos.gif" alt="" />
+          <img src="img/skeleton-camera.gif" alt="" />
+          <img src="img/skeleton-chair.gif" alt="" />
+        </div>
+        <div class="skeletons-right">
+          <img src="img/skeleton-icecream.gif" alt="" />
+          <img src="img/skeleton-sprite.gif" alt="" />
+          <img src="img/skeleton-trippy.gif" alt="" />
+        </div>
+      </div>
       <div class="wrapper" id="wrapper-form">
+        <img class="skeleton-h2" src="img/skeleton-wave.gif"/>
+        <h2>Enter Movie Ratings</h2>
+        <h3>Because for some weird reason you have all of the data on hand but are still unable to sort it.</h3>
         <form class="form1" action="index.html" method="post">
           <div class="form-group">
             <label for="title">Movie title: </label>
@@ -24,14 +39,14 @@
             <input type="text" name="year" id="year">
           </div>
           <div class="form-group">
-            <label for="score">Tomatometer Score: </label>
+            <label for="score">Tomatometer score: </label>
             <input type="number" name="score" id="score">
           </div>
+          <img class="skeleton-h2" id="bottom-h2" src="img/gradient-skeleton-cheeseit.gif"/>
           <button type="submit" name="submit">Submit</button>
-          <button type="button" name="button">Show Table</button>
         </form>
       </div>
-      <div class="wrapper" id="wrapper-table">
+      <div class="wrapper initially-hidden" id="wrapper-table">
         <table class="table">
           <thead>
             <th>Title</th>
@@ -45,7 +60,6 @@
         <div class="floor">
 
         </div>
-        <button type="button" name="button2">Go Back</button>
       </div><!--end wrapper-->
     </div><!--end container->
   </body>

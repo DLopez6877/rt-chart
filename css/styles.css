@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Autarquica';
+  src: url(../fonts/Autarquica.ttf);
+}
+
+@font-face {
+  font-family: 'comic bold';
+  src: url(../fonts/COMICBOLD.ttf);
+}
+
+@font-face {
+  font-family: 'annie';
+  src: url(../fonts/AnniesHandwriting.ttf);
+}
+
+
+html {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient( #df7b95, #df937b, #dfc57b); /* Safari */
+  background: -o-linear-gradient( #df7b95, #df937b, #dfc57b); /* Opera 11.6 to 12.0 */
+  background: -moz-linear-gradient( #df7b95, #df937b, #dfc57b); /* Firefox 3.6 to 15 */
+  background: linear-gradient(#df7b95, #df937b, #dfc57b); /* Standard syntax */
+  width: 100%;
+  height: 100%;
+  color: #854949;
+}
+
+header h1{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 40px 0;
+  padding: 20px;
+  font-family: 'comic bold';
+  font-size: 3em;
+  text-shadow: -2px 2px 10px red;
+  border-bottom: 1px solid #854949;
+  color: white;
+}
+
+.container {
+  position: relative;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 440px;
+  display: block;
+  border: 1px solid #854949;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#wrapper-form {
+  /*height: 250px;*/
+}
+
+#wrapper-form h2 {
+  font-family: 'comic bold';
+  font-size: 37px;
+}
+
+#wrapper-form h3 {
+font-family: 'annie';
+font-size: 25px;
+}
+
+
+.form1 {
+  text-align: left;
+  font-family: monospace;
+}
+
+.o img{
+  width: 25px;
+  margin: 3px;
+  padding: 5px;
+  vertical-align: middle;
+  border-radius: 100%;
+  border: thin solid;
+  border-color: #f33;
+  box-shadow: inset 0 0 15px #854949;
+}
+
+.skeleton-h2 {
+  width: 100px;
+  border-radius: 100%;
+  border: medium solid;
+  border-color: #9BE7FF;
+  float: left;
+  box-shadow: inset 0 0 40px #B793F6;
+  /*margin: 50px auto;*/
+}
+
+#bottom-h2 {
+  float: right;
+  margin-top: -60px;
+}
+
+.form1 label {
+  font-size: 20px;
+}
+
+#year {
+  width: 80px;
+}
+
+#score {
+  width: 92px;
+}
+
+button {
+  padding: 10px;
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+  border: none;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px #f33;
+  border: 2px solid #f33;
+  border-radius: 7px;
+  margin: 15px 19px 0;
+}
+
+button:hover {
+  padding: 10px;
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* Standard syntax */
+  box-shadow: 0 0 10px white;
+  font-weight: bolder;
+  /*font-size: 50px;*/
+  border: 2px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  overflow: scroll;
+  width: 440px;
+  font-family: monospace;
+}
+
+th, td {
+  border: 3px solid #f33;
+  margin: 0;
+}
+th {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+th:first-child {
+  width: 70%;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(186,54,208, .3), rgba(138, 243, 255, .5)); /* Standard syntax */
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(250,208,18, .3), rgba(18, 250, 208, .5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(250,208,18, .3), rgba(18, 250, 208, .5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(250,208,18, .3), rgba(18, 250, 208, .5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(250,208,18, .3), rgba(18, 250, 208, .5)); /* Standard syntax */
+}
+
+thead {
+  background: rgba(200, 110, 110, 0.5);
+}
+
+
+.initially-hidden {
+  display: none;
+}
+
+.skeletons-left {
+  position:relative;;
+}
+
+.skeletons-left img {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 150px;
+}
+
+.skeletons-right {
+  position: relative;
+}
+
+.skeletons-right img {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  right: 150px;
+}
+
+.skeleton-col img:nth-child(2) {
+  top: 300px;
+}
+
+.skeleton-col img:nth-child(3) {
+  top: 600px;
+}
